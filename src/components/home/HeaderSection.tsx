@@ -1,10 +1,10 @@
-import { Input, Select } from "antd";
-import bgImage from "./assets/bg1.jpg";
-import SearchSvg from "./components/svg/SearchSvg";
-import useDebounce from "./hooks/useDebounce";
+import { Select } from "antd";
+import bgImage from "../../assets/bg1.jpg";
 import { useState } from "react";
-import { IDropdown } from "./types";
-import CloudSvg from "./components/svg/CloudSvg";
+import useDebounce from "../../hooks/useDebounce";
+import { IDropdown } from "../../types";
+import SearchSvg from "../svg/SearchSvg";
+import CloudSvg from "../svg/CloudSvg";
 const HeaderSection = () => {
     const [value, setValue] = useState("");
     const debouncedSearch = useDebounce((v) => {
@@ -20,10 +20,7 @@ const HeaderSection = () => {
         <div className="bg-cover bg-center h-[40vh]" style={{ backgroundImage: `url(${bgImage})` }}>
             <div className="flex items-center justify-center h-full w-full flex-col">
                 <div className="relative">
-                    {/* <Input
-              placeholder="Search"
-              className="w-[400px] py-3 pl-10 pr-4" // Adjust padding as needed
-            /> */}
+
                     <Select
                         className="w-[550px] h-12"
                         showSearch
@@ -48,7 +45,7 @@ const HeaderSection = () => {
                             <h2>Uttara</h2>
                             <small>Bangladesh</small>
                             <div className="flex gap-x-2 items-center">
-                                <span><CloudSvg /></span>
+                                <span><CloudSvg color="rgba(255,255,255,1)" size={18} /></span>
                                 <span className="text-xl">
                                     25°
                                     <span className="">C</span>
@@ -60,7 +57,7 @@ const HeaderSection = () => {
                             <h2>Uttara</h2>
                             <small>Bangladesh</small>
                             <div className="flex gap-x-2 items-center">
-                                <span><CloudSvg /></span>
+                                <span><CloudSvg color="rgba(255,255,255,1)" size={18} /></span>
                                 <span className="text-xl">
                                     25°
                                     <span className="">C</span>
@@ -72,7 +69,7 @@ const HeaderSection = () => {
                             <h2>Uttara</h2>
                             <small>Bangladesh</small>
                             <div className="flex gap-x-2 items-center">
-                                <span><CloudSvg /></span>
+                                <span><CloudSvg color="rgba(255,255,255,1)" size={18} /></span>
                                 <span className="text-xl">
                                     25°
                                     <span className="">C</span>
@@ -82,9 +79,6 @@ const HeaderSection = () => {
                         </div>
                     </div>
                 </div>
-
-
-
             </div>
         </div>
     );

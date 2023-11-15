@@ -1,9 +1,14 @@
+type ICloud = {
+    color: string;
+    size: number
+}
 
-
-const CloudSvg = () => {
+const CloudSvg = (props: ICloud) => {
     return (
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"><path d="M9.5 6C5.91015 6 3 8.91015 3 12.5C3 16.0899 5.91015 19 9.5 19H16.5C18.9853 19 21 16.9853 21 14.5C21 12.0147 18.9853 10 16.5 10C16.1717 10 15.8516 10.0352 15.5433 10.1019C14.589 7.69894 12.2429 6 9.5 6ZM16.5 21H9.5C4.80558 21 1 17.1944 1 12.5C1 7.80558 4.80558 4 9.5 4C12.5433 4 15.2131 5.59939 16.7146 8.00348C20.2051 8.11671 23 10.982 23 14.5C23 18.0899 20.0899 21 16.5 21Z" fill="rgba(255,255,255,1)"></path></svg>
+        <svg className="weather-icon" viewBox="0 0 288 288" width={props.size} height={props.size}><path d="M264 157.15a57.5 57.5 0 0 0-57.5-57.5h-9.75c-18.372-21.63-47.985-30.027-74.977-21.26-26.99 8.767-46.018 32.963-48.173 61.26H61.55c-20.71 0-37.5 16.79-37.5 37.5s16.79 37.5 37.5 37.5h145c31.737-.028 57.45-25.763 57.45-57.5Z" stroke={props.color} stroke-width="10" fill="none" fill-rule="evenodd"></path></svg>
     );
 };
 
 export default CloudSvg;
+
+
