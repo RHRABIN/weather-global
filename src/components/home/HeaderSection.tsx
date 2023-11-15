@@ -22,7 +22,7 @@ const HeaderSection = () => {
                 <div className="relative">
 
                     <Select
-                        className="w-[550px] h-12"
+                        className="w-[90vw] md:w-[70vw] lg:w-[550px] h-12"
                         showSearch
                         placeholder={`Search`}
                         defaultActiveFirstOption={false}
@@ -40,11 +40,13 @@ const HeaderSection = () => {
                 <div className=" mt-6">
                     <small className="text-white">Recent Location</small>
 
-                    <div className="flex gap-4">
-                        <div className="h-[133px] w-[160px] rounded p-4 bg-[rgba(0,0,0,.25)] text-white">
-                            <h2>Uttara</h2>
-                            <small>Bangladesh</small>
-                            <div className="flex gap-x-2 items-center">
+                    <div className="lg:flex gap-4 space-y-2 lg:space-y-0">
+                        <div className="flex justify-between lg:block h-12 w-[90vw] md:w-[70vw] lg:h-[133px]  lg:w-[160px] rounded p-4 bg-[rgba(0,0,0,.25)] text-white">
+                            <div className="flex lg:flex-col flex-row items-center lg:items-start gap-2 lg:gap-0">
+                                <h2>Uttara</h2>
+                                <small>Bangladesh</small>
+                            </div>
+                            <div className="flex gap-x-2 items-center lg:flex-row flex-row  lg:mt-2 gap-2">
                                 <span><CloudSvg color="rgba(255,255,255,1)" size={18} /></span>
                                 <span className="text-xl">
                                     25°
@@ -53,10 +55,12 @@ const HeaderSection = () => {
                             </div>
                             <small>RealFeel* 25°</small>
                         </div>
-                        <div className="h-[133px] w-[160px] rounded p-4 bg-[rgba(0,0,0,.25)] text-white">
-                            <h2>Uttara</h2>
-                            <small>Bangladesh</small>
-                            <div className="flex gap-x-2 items-center">
+                        <div className="flex justify-between lg:block h-12 w-[90vw] md:w-[70vw] lg:h-[133px]  lg:w-[160px] rounded p-4 bg-[rgba(0,0,0,.25)] text-white">
+                            <div className="flex lg:flex-col flex-row items-center lg:items-start gap-2 lg:gap-0">
+                                <h2>Uttara</h2>
+                                <small>Bangladesh</small>
+                            </div>
+                            <div className="flex gap-x-2 items-center lg:flex-row flex-row  lg:mt-2 gap-2">
                                 <span><CloudSvg color="rgba(255,255,255,1)" size={18} /></span>
                                 <span className="text-xl">
                                     25°
@@ -65,10 +69,12 @@ const HeaderSection = () => {
                             </div>
                             <small>RealFeel* 25°</small>
                         </div>
-                        <div className="h-[133px] w-[160px] rounded p-4 bg-[rgba(0,0,0,.25)] text-white">
-                            <h2>Uttara</h2>
-                            <small>Bangladesh</small>
-                            <div className="flex gap-x-2 items-center">
+                        <div className="flex justify-between lg:block h-12 w-[90vw] md:w-[70vw] lg:h-[133px]  lg:w-[160px] rounded p-4 bg-[rgba(0,0,0,.25)] text-white">
+                            <div className="flex lg:flex-col flex-row items-center lg:items-start gap-2 lg:gap-0">
+                                <h2>Uttara</h2>
+                                <small>Bangladesh</small>
+                            </div>
+                            <div className="flex gap-x-2 items-center lg:flex-row flex-row  lg:mt-2 gap-2">
                                 <span><CloudSvg color="rgba(255,255,255,1)" size={18} /></span>
                                 <span className="text-xl">
                                     25°
@@ -77,6 +83,9 @@ const HeaderSection = () => {
                             </div>
                             <small>RealFeel* 25°</small>
                         </div>
+
+
+
                     </div>
                 </div>
             </div>
