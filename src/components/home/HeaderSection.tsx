@@ -5,7 +5,10 @@ import RecentLocation from "./RecentLocation";
 import { GEO_API_URL, geoOptions } from "../../apis";
 import { AsyncPaginate } from "react-select-async-paginate";
 import { ICity } from "../../types";
-const HeaderSection = () => {
+interface HeaderSectionProps {
+    onChange: (searchData: any) => void;
+}
+const HeaderSection: React.FC<HeaderSectionProps> = ({ onChange }) => {
     const [searchValue, setSearchValue] = useState("");
     const loadOptions = (inputValue: string) => {
         if (inputValue) {
@@ -36,7 +39,7 @@ const HeaderSection = () => {
 
     const handleOnChange = (searchData: any) => {
         setSearchValue(searchData);
-        // onSearchChange(searchData);
+        onChange(searchData);
     };
     return (
         <div className="bg-cover bg-center h-[40vh]" style={{ backgroundImage: `url(${bgImage})` }}>

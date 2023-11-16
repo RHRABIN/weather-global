@@ -1,18 +1,18 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useRef } from 'react';
+// import { useRef } from 'react';
 
-type CallbackFunction = (...args: any[]) => void;
+// type CallbackFunction = (...args: any[]) => void;
 
-const useDebounce = (callback: CallbackFunction, delay: number) => {
-    const timeoutRef = useRef();
+// const useDebounce = (callback: CallbackFunction, delay: number) => {
+//     const timeoutRef = useRef();
 
-    return (...args: any[]) => {
-        clearTimeout(timeoutRef.current);
+//     return (...args: any[]) => {
+//         clearTimeout(timeoutRef.current);
 
-        timeoutRef.current = setTimeout(() => {
-            callback(...args);
-        }, delay);
-    };
-};
+//         timeoutRef.current = setTimeout(() => {
+//             callback(...args);
+//         }, delay);
+//     };
+// };
 
-export default useDebounce;
+// export default useDebounce;
