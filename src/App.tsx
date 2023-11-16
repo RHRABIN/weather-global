@@ -43,10 +43,14 @@ function App() {
       </div>
       <div className="grid grid-cols-12  max-w-[1200px] mx-auto px-4 gap-4 mt-4">
         <div className="col-span-12 lg:col-span-7">
-          <LineChart />
+          {(forecast || forecastLoading) && <LineChart data={forecast} forecastLoading={forecastLoading} />}
         </div>
-        <div className="col-span-12 lg:col-span-5"></div>
       </div>
+      {
+        !forecast && <div className="text-center text-2xl text-black">
+          No Results Found!
+        </div>
+      }
     </main>
   )
 }

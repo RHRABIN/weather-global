@@ -1,4 +1,3 @@
-import React from 'react';
 import CloudSvg from '../svg/CloudSvg';
 
 const RecentLocation = () => {
