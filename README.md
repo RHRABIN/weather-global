@@ -2,7 +2,7 @@
 
 This app provides weather area;
 
-- [live Url](https://weather-app-global1.netlify.app/)
+- [live Url](https://weather-app-global2.netlify.app/)
 
 ## How to install locally.
 - clone this repository
