@@ -2,7 +2,13 @@
 
 This app provides weather area;
 
-- [live Url](https://weather-app-global1.netlify.app/) 
+- [live Url](https://weather-app-global1.netlify.app/)
+
+## How to install locally.
+- clone this repository
+- go to the cloned directory and open terminal.
+- yarn install/ npm install run install dependency
+- npm run dev or yarn dev for run this project in locally.
 
 ## features
 - Here user can search city wise
